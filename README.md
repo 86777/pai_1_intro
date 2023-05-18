@@ -1,6 +1,6 @@
 $ curl --fail -X POST \
-> -H "Content-Type: application/json" \
-> -d '{"name":"natalia"}' https://httpbin.org/post
+ -H "Content-Type: application/json" \
+ -d '{"name":"natalia"}' https://httpbin.org/post
 
 reakcja:
 
@@ -11,8 +11,8 @@ reakcja:
 
 
 $ curl --fail -X POST \
->     -H "Content-Type: application/json" \
->     -d '{"name":"natalia"}' https://httpbin.org/get
+  -H "Content-Type: application/json" \
+  -d '{"name":"natalia"}' https://httpbin.org/get
 
 reakcja:
 
