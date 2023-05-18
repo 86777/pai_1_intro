@@ -1,3 +1,7 @@
+Zainstalowałem Git Bash na Windowsie
+
+
+
 $ curl --fail -X POST \
  -H "Content-Type: application/json" \
  -d '{"name":"natalia"}' https://httpbin.org/post
