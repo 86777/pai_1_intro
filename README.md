@@ -46,6 +46,30 @@ reakcja:
 
 
 
+$ curl --fail \
+    -X DELETE \
+    -H "Content-Type: application/json" https://httpbin.org/delete
+    
+reakcja:
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   362  100   362    0     0    105      0  0:00:03  0:00:03 --:--:--   105{
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {},
+  "headers": {
+    "Accept": "*/*",
+    "Content-Type": "application/json",
+    "Host": "httpbin.org",
+    "User-Agent": "curl/7.88.1",
+    "X-Amzn-Trace-Id": "Root=1-64665061-3b7d02436fd715c81e0469f8"
+  },
+  "json": null,
+  "origin": "83.30.133.158",
+  "url": "https://httpbin.org/delete"
+}
 
 
 
