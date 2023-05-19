@@ -72,8 +72,10 @@ Metoda PUT zwraca pełną zawartość tego, do czego została wywołana, zaś me
 
 CRUD opiera się na metodach POST, GET, PUT lub PATCH oraz DELETE
 
-Circuit Breakers działa w ten sposób, że jeśli jakaś funkcjonalność nie działa, to pozostali klienci próbujący jej zażądać od razu dostają informację, że nie działa.
+Circuit Breakers działa w ten sposób, że jeśli jakaś funkcjonalność nie działa, to pozostali klienci próbujący jej zażądać od razu dostają informację, że nie działa. Może się okazać, że czasowe zablokowanie funkcjonalności będzie lepszym rozwiązaniem niż ryzykowanie zawieszenia całej strony.
 
 Programiści próbują unikać Cascading Failures, ponieważ drobne błędy powodujące inne błędy mogą zablokować całą stronę.
+
+Graceful degradation to sposób na budowanie strony internetowej. Na początku jest strona jest przygotowana dla aktualmych przeglądarek, a potem dostosowuje się ją dla starszych wersji. To jest ważne z punktu widzenia twórcy strony, ponieważ część użytkowników może mieć starsze przeglądarki, a nie należy tracić takich klientów.
 
 
