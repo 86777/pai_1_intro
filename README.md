@@ -71,3 +71,9 @@ reakcja:
 Metoda PUT zwraca pełną zawartość tego, do czego została wywołana, zaś metoda PATCH zwraca zmodyfikowaną zawartość.
 
 CRUD opiera się na metodach POST, GET, PUT lub PATCH oraz DELETE
+
+Circuit Breakers działa w ten sposób, że jeśli jakaś funkcjonalność nie działa, to pozostali klienci próbujący jej zażądać od razu dostają informację, że nie działa.
+
+Programiści próbują unikać Cascading Failures, ponieważ drobne błędy powodujące inne błędy mogą zablokować całą stronę.
+
+
