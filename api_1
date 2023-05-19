@@ -1,0 +1,8 @@
+import requests
+
+link = requests.get('https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json')
+
+if (link.status_code == requests.code.ok):
+    print(link.json())
+else:
+    System.exit(0)
