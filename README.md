@@ -1,17 +1,14 @@
 Zainstalowałem Git Bash na Windowsie
 
 
-
 $ curl --fail -X POST \
  -H "Content-Type: application/json" \
  -d '{"name":"natalia"}' https://httpbin.org/post
 
 reakcja:
-
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100    18    0     0    0    18      0      0 --:--:--  0:00:30 --:--:--     0
-
 
 
 $ curl --fail -X POST \
@@ -19,12 +16,10 @@ $ curl --fail -X POST \
   -d '{"name":"natalia"}' https://httpbin.org/get
 
 reakcja:
-
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
   9   196    0     0  100    18      0      5  0:00:03  0:00:03 --:--:--     8
 curl: (22) The requested URL returned error: 405
-
 
 
 $ curl --fail -X GET \
@@ -32,7 +27,6 @@ $ curl --fail -X GET \
     https://httpbin.org/get
 
 reakcja:
-
 % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   296  100   296    0     0    211      0  0:00:01  0:00:01 --:--:--   213{
@@ -49,13 +43,11 @@ reakcja:
 }
 
 
-
 $ curl --fail \
     -X DELETE \
     -H "Content-Type: application/json" https://httpbin.org/delete
-    
+ 
 reakcja:
-
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   362  100   362    0     0    105      0  0:00:03  0:00:03 --:--:--   105{
@@ -76,5 +68,6 @@ reakcja:
 }
 
 
+Metoda PUT zwraca pełną zawartość tego, do czego została wywołana, zaś metoda PATCH zwraca zmodyfikowaną zawartość.
 
-
+CRUD opiera się na metodach POST, GET, PUT lub PATCH oraz DELETE
