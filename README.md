@@ -76,6 +76,6 @@ Circuit Breakers działa w ten sposób, że jeśli jakaś funkcjonalność nie d
 
 Programiści próbują unikać Cascading Failures, ponieważ drobne błędy powodujące inne błędy mogą zablokować całą stronę.
 
-Graceful degradation to sposób na budowanie strony internetowej. Na początku jest strona jest przygotowana dla aktualmych przeglądarek, a potem dostosowuje się ją dla starszych wersji. To jest ważne z punktu widzenia twórcy strony, ponieważ część użytkowników może mieć starsze przeglądarki, a nie należy tracić takich klientów.
+Graceful Degradation polega na tym, że jeśli jest zbyt wiele zapytań do serwisu, to podejmujemy świadomą decyzję, że części klientów nie obsłużymy.
 
 
